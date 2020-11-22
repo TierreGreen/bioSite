@@ -1,0 +1,241 @@
+body {
+  font-family: 'Crete Round', 'Times New Roman', serif;
+  
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container {
+
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  overflow-y: hidden;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: whitesmoke;
+
+}
+
+h1, h2, h3, tr, td, li, ul, ol {
+  Font-family: 'Vollkorn', 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: bold;
+  word-spacing: 0em;
+  color: black;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#sideBarL {
+  height: 100%;
+  width: 10%;
+  background-color: black;
+  color: whitesmoke;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  display: block;
+  font-size: 20px;
+}
+
+#sideBarL a {
+  display: block;
+  background-color: black;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 30px;
+}
+
+ul {
+  word-spacing: 6em;
+  line-height: 36px;
+  box-shadow: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  padding-top: 8px;
+  position: fixed;
+  overflow: hidden;
+    
+}
+
+.menuBar {
+  background-color: #085bf5;
+  right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menuBar li {
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  width: (100/6);
+}
+
+.dropbtn {
+  background-color: #085bf5;
+  color: white;
+  padding: 0;
+  border-radius: 5%;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8f8b8b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.dropdown:hover .dropbtn {
+    background-color: #085bf5;
+  }
+
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+
+#hCat {
+  display: block;
+  border-radius: 10%;
+  border-color: #1b1aa4;
+  border-style: groove;
+  border-width: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 0;
+
+}
+
+#floatL img {
+  padding-right: .5em;
+  float: left;
+  width: 140px;
+  height: 184.5px;
+  margin-left: 10%;
+}
+
+#floatR img {
+  padding-left: .5em;
+  float: right;
+  width: 250px;
+  margin-right: 10%;
+}
+
+.column {
+  float: left;
+  width: 19.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: .25%;
+  padding-right: .25%;
+  padding-bottom: 4em;
+
+}
+
+.column img {
+  width: 100%;
+}
+
+figcaption {
+  display: block;
+  font-size: 24px;
+  font-weight: bolder;
+  color: red;
+  text-align: center;
+  letter-spacing: 2px;
+  Margin-left: auto;
+  margin-right: auto;
+  width: 1000px;    
+}
+
+div.photo img {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 10%;
+  border-width: 24px;
+  border-style: groove;
+  border-color: black;
+}
+
+.figpho {
+text-transform: uppercase;
+}
+
+#wFloatL img {
+  float: left;
+  width: 250px;
+  border-radius: 30%;
+  margin-left: 10%;
+  padding-right: .5em;
+}
+
+#sideBarR {
+  height: 100%;
+  width: 10%;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  display: block;
+}
