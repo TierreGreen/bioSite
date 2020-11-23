@@ -1,6 +1,6 @@
 body {
   font-family: 'Crete Round', 'Times New Roman', serif;
-  
+  max-zoom: 150%;
   width: 100%;
   padding: 0;
   margin-bottom: 0;
@@ -48,6 +48,8 @@ h1, h2, h3, tr, td, li, ul, ol {
 #sideBarL a {
   display: block;
   background-color: black;
+  padding: 10px;
+  text-decoration: none;
 }
 
 p {
@@ -101,6 +103,7 @@ ul {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 
 .dropdown-content {
@@ -117,6 +120,7 @@ ul {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  z-index: 1;
 }
 
 .dropdown-content a:hover {
@@ -125,6 +129,7 @@ ul {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 1;
   }
 
 .dropdown:hover .dropbtn {
@@ -177,6 +182,19 @@ h1 {
   margin-right: 10%;
 }
 
+.slideShow {
+  border: solid;
+  border-color: #1b1aa4;
+  width: 80%;
+  border-width: 12px;
+  padding-top: .25%;
+  padding-bottom: 12%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
 .column {
   float: left;
   width: 19.5%;
@@ -185,7 +203,6 @@ h1 {
   padding-left: .25%;
   padding-right: .25%;
   padding-bottom: 4em;
-
 }
 
 .column img {
