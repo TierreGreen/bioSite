@@ -216,9 +216,9 @@ figcaption {
   color: red;
   text-align: center;
   letter-spacing: 2px;
-  Margin-left: auto;
-  margin-right: auto;
-  width: 80%;    
+  Margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;    
 }
 
 div.photo img {
