@@ -1,3 +1,7 @@
+@viewport {
+  max-zoom: 1.5;
+}
+
 body {
   font-family: 'Crete Round', 'Times New Roman', serif;
   max-zoom: 150%;
@@ -216,8 +220,8 @@ figcaption {
   color: red;
   text-align: center;
   letter-spacing: 2px;
-  Margin-left: 10%;
-  margin-right: 10%;
+  Margin-left: Auto;
+  margin-right: Auto;
   width: 100%;    
 }
 
