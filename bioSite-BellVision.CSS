@@ -86,6 +86,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .menuBar li {
@@ -93,6 +94,11 @@ ul {
   font-size: 24px;
   text-align: center;
   width: (100/6);
+  text-decoration: none;
+}
+
+.menuBar li a {
+  text-decoration: none;
 }
 
 .dropbtn {
@@ -168,25 +174,31 @@ h1 {
   margin-right: auto;
   width: 70%;
   padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 #floatL img {
-  padding-right: .5em;
+  
   float: left;
   width: 140px;
   height: 184.5px;
+  margin-top: 1%;
   margin-left: 10%;
+  margin-right: 1%;
 }
 
 #floatR img {
-  padding-left: .5em;
   float: right;
-  width: 250px;
+  width: 18%;
+  margin-top: 1%;
   margin-right: 10%;
+  margin-left: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slideShow {
+  position: relative;
   border: solid;
   border-color: #1b1aa4;
   width: 80%;
@@ -196,7 +208,71 @@ h1 {
   background-color: black;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
+}
+
+.theSlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* next button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover background 80% opacity */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.theSlides img {
+  width: 100%;
+}
+/* slide number */
+.slideNo {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.captionCon {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .column {
@@ -211,6 +287,16 @@ h1 {
 
 .column img {
   width: 100%;
+}
+
+/* thumbnail opacity 60% */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
 figcaption {
@@ -232,9 +318,10 @@ div.photo img {
   margin-right: auto;
   width: 70%;
   border-radius: 10%;
-  border-width: 24px;
+  border-width: 16px;
   border-style: groove;
-  border-color: black;
+  border-color:rgb(26, 9, 9);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .figpho {
@@ -243,10 +330,12 @@ text-transform: uppercase;
 
 #wFloatL img {
   float: left;
-  width: 250px;
+  width: 15%;
   border-radius: 30%;
+  margin-top: 1%;
   margin-left: 10%;
-  padding-right: .5em;
+  margin-right: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #sideBarR {
@@ -259,4 +348,15 @@ text-transform: uppercase;
   right: 0;
   overflow-x: hidden;
   display: block;
+}
+
+.return {
+  font-size: 12px;
+  color: #1b1aa4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.return a {
+  text-decoration: none;
 }

@@ -39,14 +39,14 @@
                     </div>
                 </li>
             </div>
-            <li><a class="link" href="#hCat">About</a></li>
-            <li>Milford</li>
+            <li><a class="link" href="#topReturn">About</a></li>
+            <li><a href="https://www.milford.com" target="_blank">Milford</a></li>
             <li>Linked<a href="https://www.linkedin.com" target="_blank"><img src="images/icomoon1/PNG/linkedin.png" alt="LinkedIn"></a></li>
             <li><a href="https://www.twitter.com" target="_blank"><img src="images/icomoon1/PNG/twitter.png" alt="Twitter"></a></li>
-            <li>Homes</li>
+            <li><a href="https://www.realtor.com/realestateagents/bryan-bell_omaha_ne_3860249_015589504" target="_blank">Realtor</a></li>
         </ul>
     
-    <h1>BellVision: The Life of a Community Leader</h1>
+    <h1 id="topReturn">BellVision: The Life of a Community Leader</h1>
     <!--Main Photo of Intro Section-->
     
     <figure>
@@ -68,7 +68,7 @@
     <h2>The Wonder Years: Virginia Sonrise in Nebraska Skies</h2>
 
     <div id="floatR">
-        <img src="images/html/Baby Bell.jpg" alt="Baby Picture">
+        <img src="images/html/collage.jpg" alt="Childhood Collage">
     </div>
     
     <p>
@@ -77,29 +77,98 @@
         Praesent efficitur in massa sit amet pretium. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam viverra velit faucibus lacus consequat, id fermentum eros aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam justo lacus, porttitor at nibh id, iaculis scelerisque enim. Vestibulum at risus vulputate, ultrices velit et, sagittis mauris. Sed enim turpis, pretium ac mauris ut, laoreet tristique augue. Suspendisse vehicula vulputate lacinia. Nulla facilisi. Pellentesque feugiat porttitor ultricies.<br><br>
     </p>
 
+    <p class="Return"><a href="#topReturn">Return to top</a></p>
+
     <h2>Frank the Tank: Birth of a Legend</h2>
 
     <div class="slideShow">
-        <div class="column">
-            <img src="images/html/HammerG.jpg" alt="Collegiate Athlete">
+        <div class="theSlides">
+            <div class="slideNo">1 / 5</div>
+            <img src="images/html/HammerG.jpg" alt="Nebraska Hammer Thrower">
         </div>
 
-        <div class="column">
-            <img src="images/html/HammerG.jpg" alt="Collegiate Athlete">
+        <div class="theSlides">
+            <div class="slideNo">2 / 5</div>
+            <img src="images/html/FDNightlife_2.jpg" alt="College Night Out with Friends">
         </div>
 
-        <div class="column">
-            <img src="images/html/HammerG.jpg" alt="Collegiate Athlete">
+        <div class="theSlides">
+            <div class="slideNo">3 / 5</div>
+            <img src="images/html/NEBThrowing.jpg" alt="Competitors Waiting to Compete">
         </div>
 
-        <div class="column">
-            <img src="images/html/HammerG.jpg" alt="Collegiate Athlete">
+        <div class="theSlides">
+            <div class="slideNo">4 / 5</div>
+            <img src="images/html/NEBHammer.jpg" alt="Group of Athletes">
         </div>
 
-        <div class="column">
-            <img src="images/html/HammerG.jpg" alt="Collegiate Athlete">
+        <div class="theSlides">
+            <div class="slideNo">5 / 5</div>
+            <img src="images/html/Daysoffuturepast.jpg" alt="Nebraska Collegiate Graduation">
         </div>
-    </div><br>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="captionCon">
+            <p id="caption"></p>
+        </div>
+
+        <div class=slideRow>
+            <div class="column">
+                <img class="demo cursor" src="images/html/HammerG.jpg" onclick="currentSlide(1)" alt="Nebraska Hammer Thrower">
+            </div>
+
+            <div class="column">
+                <img class="demo cursor" src="images/html/FDNightlife_2.jpg" onclick="currentSlide(2)" alt="College Night Out with Friends">
+            </div>
+
+            <div class="column">
+                <img class="demo cursor" src="images/html/NEBThrowing.jpg" onclick="currentSlide(3)" alt="Competitors Waiting to Compete">
+            </div>
+
+            <div class="column">
+                <img class="demo cursor" src="images/html/NEBHammer.jpg" onclick="currentSlide(4)" alt="Group of Athletes">
+            </div>
+
+            <div class="column">
+                <img class="demo cursor" src="images/html/Daysoffuturepast.jpg" onclick="currentSlide(5)" alt="Nebraska Collegiate Graduation">
+            </div> 
+        </div>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("theSlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.lenth; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    <br>
     
     <div class="photo">
         <figure>
@@ -125,7 +194,12 @@
 
         Pellentesque rutrum purus vel nunc ornare, nec lacinia orci dignissim. Duis volutpat luctus lacus, id fringilla ex placerat quis. Donec in nunc iaculis, facilisis felis eu, convallis arcu. Integer ac commodo purus, ut ultrices tortor. Duis a enim elit. Vivamus convallis non velit vitae posuere. Ut sed mauris vehicula, sollicitudin purus ac, ornare ligula.
     </p>
+
+    <p class="Return"><a href="#topReturn">Return to top</a></p>
+
 </div>
+
+
 
 <div id="sideBarR">
     <ul></ul>
