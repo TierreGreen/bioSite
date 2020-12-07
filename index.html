@@ -18,12 +18,13 @@
 </head>
 
 <body>
+        <!--Page navigation to different sections-->
         <div id="sideBarL">
-            <a href="#Link1">Link 1</a>
-            <a href="#Link2">Link 2</a>
-            <a href="#Link3">Link 3</a>
-            <a href="#Link4">Link 4</a>
-            <a href="#Link5">Link 5</a>
+            <a href="#topReturn">Introduction</a>
+            <a href="#floatR">Early Life</a>
+            <a href="#CollegeDays">College Years</a>
+            <a href="#Family">Family Life</a>
+            <a href="#wFloatL">The Professional</a>
         </div>
         <div class="container">
     <!--Menu to start the project (subject to change)-->
@@ -66,7 +67,7 @@
     <br>
 
     <h2>The Wonder Years: Virginia Sonrise in Nebraska Skies</h2>
-
+<!--pHoto of childhood floated to the right-->
     <div id="floatR">
         <img src="images/html/collage.jpg" alt="Childhood Collage">
     </div>
@@ -76,10 +77,12 @@
 
         Praesent efficitur in massa sit amet pretium. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam viverra velit faucibus lacus consequat, id fermentum eros aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam justo lacus, porttitor at nibh id, iaculis scelerisque enim. Vestibulum at risus vulputate, ultrices velit et, sagittis mauris. Sed enim turpis, pretium ac mauris ut, laoreet tristique augue. Suspendisse vehicula vulputate lacinia. Nulla facilisi. Pellentesque feugiat porttitor ultricies.<br><br>
     </p>
-
+<!--return to top link-->
     <p class="Return"><a href="#topReturn">Return to top</a></p>
 
-    <h2>Frank the Tank: Birth of a Legend</h2>
+    <h2 id="CollegeDays">Frank the Tank: Birth of a Legend</h2>
+
+    <!-- slideshow of college pics-->
 
     <div class="slideShow">
         <div class="theSlides">
@@ -106,7 +109,7 @@
             <div class="slideNo">5 / 5</div>
             <img src="images/html/Daysoffuturepast.jpg" alt="Nebraska Collegiate Graduation">
         </div>
-
+        <!--prev and next buttons-->
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
 
@@ -114,29 +117,31 @@
             <p id="caption"></p>
         </div>
 
+        <!--gallery of photos-->
+
         <div class=slideRow>
             <div class="column">
-                <img class="demo cursor" src="images/html/HammerG.jpg" onclick="currentSlide(1)" alt="Nebraska Hammer Thrower">
+                <img class="demoCursor" src="images/html/HammerG.jpg" onclick="currentSlide(1)" alt="Nebraska Hammer Thrower">
             </div>
 
             <div class="column">
-                <img class="demo cursor" src="images/html/FDNightlife_2.jpg" onclick="currentSlide(2)" alt="College Night Out with Friends">
+                <img class="demoCursor" src="images/html/FDNightlife_2.jpg" onclick="currentSlide(2)" alt="College Night Out with Friends">
             </div>
 
             <div class="column">
-                <img class="demo cursor" src="images/html/NEBThrowing.jpg" onclick="currentSlide(3)" alt="Competitors Waiting to Compete">
+                <img class="demoCursor" src="images/html/NEBThrowing.jpg" onclick="currentSlide(3)" alt="Competitors Waiting to Compete">
             </div>
 
             <div class="column">
-                <img class="demo cursor" src="images/html/NEBHammer.jpg" onclick="currentSlide(4)" alt="Group of Athletes">
+                <img class="demoCursor" src="images/html/NEBHammer.jpg" onclick="currentSlide(4)" alt="Group of Athletes">
             </div>
 
             <div class="column">
-                <img class="demo cursor" src="images/html/Daysoffuturepast.jpg" onclick="currentSlide(5)" alt="Nebraska Collegiate Graduation">
+                <img class="demoCursor" src="images/html/Daysoffuturepast.jpg" onclick="currentSlide(5)" alt="Nebraska Collegiate Graduation">
             </div> 
         </div>
     </div>
-    
+    <!--script for slideshow gallery function-->
     <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -152,7 +157,7 @@
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("theSlides");
-        var dots = document.getElementsByClassName("demo");
+        var dots = document.getElementsByClassName("demoCursor");
         var captionText = document.getElementById("caption");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
@@ -168,11 +173,17 @@
     }
     </script>
 
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis id nisl ac cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer venenatis non lectus et luctus. Vestibulum fermentum nunc purus, in accumsan mi porta vitae. Aliquam sapien neque, maximus sed nisi nec, elementum ultricies erat. Quisque tempor vestibulum scelerisque. Praesent sodales, libero et efficitur commodo, leo erat rhoncus magna, ac facilisis eros nisl quis leo. In nunc libero, mattis eu iaculis ultrices, consectetur a justo. Ut sit amet semper leo. Pellentesque in augue ac ipsum maximus gravida. Donec risus ipsum, aliquet vulputate mauris et, dignissim tincidunt tellus. Etiam porttitor feugiat erat eget dictum. Aenean nec sem sit amet dolor porttitor gravida.
+
+        Aenean augue justo, placerat vitae metus ut, laoreet fermentum neque. Vivamus sapien massa, rutrum in varius at, tempus at leo. Nullam efficitur, massa vel efficitur varius, enim nisi pulvinar velit, non porta nibh dui vel massa. Donec finibus ipsum ut purus tempor, et faucibus orci fringilla. Proin varius lectus leo, non suscipit lacus varius vitae. Duis sagittis id massa ac imperdiet. Etiam urna velit, dictum eu feugiat a, tincidunt volutpat lectus. Sed sed leo ultricies, ornare quam at, ultricies turpis. Sed imperdiet rhoncus ultricies. Proin.
+    </p>
+
     <br>
     
     <div class="photo">
         <figure>
-            <img src="images/html/Jingle Bells.jpg" alt="Family Holiday Photo"><figcaption class="figpho">Jingle Bells and the Age Old Story</figcaption>
+            <img id="Family" src="images/html/Jingle Bells.jpg" alt="Family Holiday Photo"><figcaption class="figpho">Jingle Bells and the Age Old Story</figcaption>
         </figure>
     </div>
     
