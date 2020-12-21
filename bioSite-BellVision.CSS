@@ -41,7 +41,7 @@ h1, h2, h3, tr, td, li, ul, ol {
   background-image: url('images/html/fields.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: whitesmoke;
+  color: black;
   position: fixed;
   z-index: 1;
   top: 36px;
@@ -55,6 +55,7 @@ h1, h2, h3, tr, td, li, ul, ol {
 
 #sideBarL a {
   display: block;
+  color: black;
   padding: 10px;
   line-height: 50px;
   text-decoration: none;
@@ -102,6 +103,7 @@ ul {
 
 .menuBar {
   background-color: #02688b;
+  color: black;
   right: 0;
   position: fixed;
   top: 0;
@@ -112,6 +114,7 @@ ul {
 
 .menuBar li {
   display: inline-block;
+  color: black;
   font-size: 24px;
   text-align: center;
   width: (100/6);
@@ -424,7 +427,11 @@ text-transform: uppercase;
 }
 
 #famLife {
-  padding-top: 35px;
+  padding-top: 45px;
+}
+
+#prof {
+  padding-top: 70px;
 }
 
 #sideBarR p {
