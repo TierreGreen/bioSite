@@ -23,8 +23,6 @@ body {
   padding: 0;
   margin-bottom: 0;
   background-color: whitesmoke;
-  
-
 }
 
 h1, h2, h3, tr, td, li, ul, ol {
@@ -78,6 +76,17 @@ p {
   line-height: 30px;
 }
 
+blockquote {
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: justify;
+  text-indent: 7%;
+  margin-left: 15%;
+  margin-right: 15%;
+  line-height: 30px;
+}
 ul {
   word-spacing: 6em;
   line-height: 36px;
@@ -131,7 +140,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #8f8b8b;
+  background-color: #02698bb7;
   min-width: 160px;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
@@ -157,20 +166,34 @@ ul {
     z-index: 2;
   }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover, .dropdown:focus .dropbtn {
     background-color: #02688b;
   }
 
 
 a:visited {
-  color: purple;
+  color: rgb(51, 0, 109);
 }
 
 a:hover {
   text-decoration: underline;
-  background-color: #037297;
+  background-color: #000f1463;
+  padding: 2px;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
 h1 {
   font-size: 48px;
   letter-spacing: 2px;
@@ -179,18 +202,23 @@ h1 {
   padding-top: 12px;
 }
 
-#hCat {
+.newSlides {
   display: block;
   border-radius: 10%;
-  border-color: #1b1aa4;
+  border-color: black;
   border-style: groove;
   border-width: 12px;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  height: 650px;
   padding: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+hr {
+  line-height: 3px;
 }
 
 #floatL img {
@@ -222,7 +250,7 @@ h1 {
 .slideShow {
   position: relative;
   border: solid;
-  border-color: #1b1aa4;
+  border-color: #02688b;
   width: 80%;
   border-width: 12px;
   padding-top: .25%;
@@ -247,7 +275,7 @@ h1 {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 42%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -277,18 +305,18 @@ h1 {
 /* slide number */
 .slideNo {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 16px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 
 /* Container for image text */
-.captionCon {
+#caption {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
-  color: white;
+  color: lightgrey;
 }
 
 .row:after {
@@ -299,7 +327,7 @@ h1 {
 
 .column {
   float: left;
-  width: 19.5%;
+  width: 16.12%;
   margin-left: auto;
   margin-right: auto;
   padding-left: .25%;
@@ -381,7 +409,7 @@ text-transform: uppercase;
 
 #topReturn {
   font-size: 12px;
-  color: #1b1aa4;
+  color: #02688b;
   font-weight: bold;
   text-decoration: none;
   padding-top: 25px;
@@ -397,4 +425,13 @@ text-transform: uppercase;
 
 #famLife {
   padding-top: 35px;
+}
+
+#sideBarR p {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  padding-bottom: 2%;
+  vertical-align: baseline;
+  color: #02688b;
 }
