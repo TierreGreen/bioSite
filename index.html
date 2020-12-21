@@ -1,45 +1,299 @@
 <!DOCTYPE html>
-<html lang="eng-US">
-    <head>
-        <meta charset="UTF-8">
-        <title>WEB 200 Fundamentals of Web Development</title>
-        <link href="Green_EX5.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
-    </head>
+<html lang="en-US">
 
-    <body>
-        <header>
-            <h1>Assignment 8.2: Build a Web Page - Part 5</h1>
-        </header>
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="bioSite of Bryan Bell">
+    <meta name="keywords" content="Bryan, 'Bryan Bell', 'Bryan Bell Jr.', Brian, Brian Bell, 'B5 Bully', Bell, 'Biography of Bryan Bell Jr.'">
+    <meta name="author" content="Tierre Green">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    
+    <title>bioSite BellVision</title>
 
-        <div id="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+    <!--stylesheets-->
+    <link href="bioSite-BellVision.CSS" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Great+Vibes&family=Parisienne&family=Sacramento&family=Vollkorn:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <a href="#maincontent" class="skip-link">Skip To Main Content</a>
+        <!--Page navigation to different sections-->
+        <div id="sideBarL">
+            <a href="#topReturn">Introduction</a>
+            <a href="#floatR">Early Life</a>
+            <a href="#CollegeDays">College Years</a>
+            <a href="#famLife">Family Life</a>
+            <a href="#wFloatL">The Professional</a>
         </div>
-        <div id="container">
-            <div class="card">
-                <div class="card-title">
-                    Top 5 Favorite Books
-                </div>
-                <div class="card-content">
-                    <ol>
-                        <li>Assassin's Apprentice</li>
-                        <li>Talon of God</li>
-                        <li>The Bible</li>
-                        <li>The Hobbit</li>
-                        <li>Mind Manipulation: Ancient and Modern Ninja Techniques</li>
-                    </ol>
-                </div>
+        <div class="container">
+    <!--Menu to start the project (subject to change)-->
+        <ul class="menuBar">
+            <div class="dropdown">
+                <li><button class="dropbtn"><img src="images/icomoon1/PNG/menu.png" alt="Menu Icon"></button>
+                    <div class="dropdown-content">
+                        <a href="https://www.milford.com/our-agents/bryan-bell" target="_blank">Bryan Bell - Milford</a>
+                        <a href="http://www.facebook.com/BBMREG" target="_blank"><img src="images/icomoon1/PNG/facebook2.png" alt="Facebook"></a>
+                        <a href="https://www.linkedin.com/in/bryan-bell-5777b430/" target="_blank">Bryan Bell Linkedin</a>
+                        <a href="https://www.instagram.com/b_bell_realtor/" target="_blank">Bryan Bell Instagram</a>
+                        <a href="#wFloatL">Professional Life</a>
+                    </div>
+                </li>
             </div>
-        </div>
-        <footer>
-            <p>
-                <a href="https://www.bellevue.edu/" target="_blank">&#169; <script>
-                    document.write(new Date().getFullYear()) 
-                </script>&nbsp;Bellevue University</a>
+            <li><a class="link" href="#topReturn">About</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><img src="images/icomoon1/PNG/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.milford.com" target="_blank">Milford</a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="images/icomoon1/PNG/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.realtor.com/realestateagents/bryan-bell_omaha_ne_3860249_015589504" target="_blank">Realtor</a></li>
+        </ul>
+    
+    <main id="maincontent" tabindex="-1"></main>
+    <div id="topReturn">
+    <h1>BellVision: The Life of a Community Leader</h1>
+    </div>
+    <!--Main Photo of Intro Section auto slideshow-->
+    
+        <div class="slideHead">
+            <img class="newSlides" src="images/html/HellCat.jpg" alt="Man with Dodge Charger Hellcat">
 
-            </p>
-        </footer>
-    </body>
+            <img class="newSlides" src="images/html/Hell Cat Dummy.jpg" alt="Dodge Charger and Challenger Hellcats">
+
+            <img class="newSlides" src="images/html/King and Queen Bell.jpg" alt="Couple at a Ball">
+            
+            <img class="newSlides" src="images/html/Bell and Trey.jpg" alt="Father and his son playing with a Power Wheel">
+
+            <img class="newSlides" src="images/html/The Boys.jpg" alt="Two Young Boys in a Car">
+
+            <img class="newSlides" src="images/html/Jacii Bell.jpg" alt="Little Girl in her Father's Forty-Niners Hat">
+        
+        </div>
+    </figure>
+    <figcaption>Out of the Darkness Came a RedEyed Knight Rider</figcaption>
+    </figure>
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("newSlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+        <!--Intro with Crest-->
+    
+    <div id="floatL">
+        <img src="images/html/Bell Crest Clean.png" alt="Family Crest">
+    </div>
+        <p>
+            There can be no denying that Bryan Bell is a valuable member of his community. A man that began his journey to become a community leader from very meager beginnings, He has continued to make his mark on the city of Bellevue, the Omaha Metropolitan area, and the State of Nebraska as a whole. Currently he serves his community as a Real Estate agent with Milford Real Estate Group and a valued member of his church Grace Apostolic Church of Omaha, Nebraska. Bryan is a husband, a father, a somewhat native son of the community and a community connector that has spent the majority of his life right here in the heartland. But the road to this place in his life was not paved smoothly nor was it void of obstacles or the various challenges that many people face. The road to to achieve the American dream rarely is. But that is exactly what he would achieve, and this is how it happened. 
+    </p>
+    <br>
+<hr>
+
+    
+<!--pHoto of childhood floated to the right-->
+    <div id="floatR">
+        <h2>The Wonder Years: Virginia Sonrise in Nebraska Skies</h2>
+        <img src="images/html/collage.jpg" alt="Childhood Collage">
+    </div>
+    
+    <p>
+        Bryan E. Bell Jr. was born on the Langley Airforce Base in Norfolk, Virginia. He was born late in the morning on Aug. first on the date of a full moon to Bryan E. Bell Sr. and Cindy Bell (Hayes) and felt that his birth was sort of ominous as it pertained to the type of person he would become. The Bell family of four would not stay in Maryland where they lived for a few years during Bryan’s early childhood. Bryan and his sister would soon make a move with their parents to the city of Omaha where they learned that life would not be so easy for them. Armed mostly with the support of church groups and a mother that was determined to ensure they received a good education and a foundation of faith, the Bell children became accustomed to the struggle life near their father’s family and church members in the greater Omaha Metropolitan area. Bryan and his sister grew up in the affordable housing area of Bellevue Nebraska where they were fortunate enough to come across some advocates in the community at large. One of the most impactful parts of his early life was when Bryan experienced the generosity of the Bellevue Police Department. One Christmas he and his sister was asked to give a list of all the gifts that they would want for Christmas. And boy did those wishes get granted. That Christmas the BPD had a drive to provide children less fortunate gifts for Christmas. Bryan never forgot those gifts and he has remained a thankful advocate of respect and honoring public servants. <br><br>
+
+        Bryan would soon learn that not everything would be so easy. From The years of 1999 and 2000 he attended Bellevue East High School where he would be a stand out athlete and an administrative favorite. Bryan served an unofficial role in helping keep the school student body engaged in school and the activities sanctioned by it. During that time he was a football player, wrestler, thrower on the track and field team, and a power lifter. During this time he was able to cultivate the relationships of some of the people who would become staples in his life. Bellevue East would produce for him the foundation of relationship with his wife and also some really good friends. None would compare to the former though who he would marry years later. With all that was good there was still a ton challenges. He felt like he needed more from his parents that sometimes divorced parents are not able to give. Because of this he would go on a series of post high school graduation misadventures that, although not ideal, would serve to shape the success he would one day achieve.<br><br>
+    </p>
+<!--return to top link-->
+    <p class="Return"><a href="#topReturn">Return to top</a></p>
+    <hr>
+    <div id="CollegeDays">
+        <h2>Frank the Tank: Birth of a Legend</h2>
+    </div>
+
+    <!-- slideshow of college pics-->
+
+    <div class="slideShow" id="slideWindow">
+        <div class="theSlides">
+            <div class="slideNo">1 / 6</div>
+            <img src="images/html/HammerG.jpg" alt="Nebraska Hammer Thrower">
+        </div>
+
+        <div class="theSlides">
+            <div class="slideNo">2 / 6</div>
+            <img src="images/html/FDNightlife_2.jpg" alt="College Night Out with Friends">
+        </div>
+
+        <div class="theSlides">
+            <div class="slideNo">3 / 6</div>
+            <img src="images/html/NEBThrowing.jpg" alt="Competitors Waiting to Compete">
+        </div>
+
+        <div class="theSlides">
+            <div class="slideNo">4 / 6</div>
+            <img src="images/html/FD Nighlife.jpg" alt="Friends Out for a Drink">
+        </div>
+
+        <div class="theSlides">
+            <div class="slideNo">5 / 6</div>
+            <img src="images/html/NEBHammer.jpg" alt="Group of Athletes">
+        </div>
+
+        <div class="theSlides">
+            <div class="slideNo">6 / 6</div>
+            <img src="images/html/Daysoffuturepast.jpg" alt="Nebraska Collegiate Graduation">
+        </div>
+        <!--prev and next buttons-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="captionCon">
+            <p id="caption"></p>
+        </div>
+
+        <!--gallery of photos-->
+
+        <div class=slideRow>
+            <div class="column">
+                <img class="demoCursor" src="images/html/HammerG.jpg" onclick="currentSlide(1)" alt="Nebraska Hammer Thrower">
+            </div>
+
+            <div class="column">
+                <img class="demoCursor" src="images/html/FDNightlife_2.jpg" onclick="currentSlide(2)" alt="College Night Out with Friends">
+            </div>
+
+            <div class="column">
+                <img class="demoCursor" src="images/html/NEBThrowing.jpg" onclick="currentSlide(3)" alt="Competitors Waiting to Compete">
+            </div>
+
+            <div class="column">
+                <img class="demoCursor" src="images/html/FD Nighlife.jpg" onclick="currentSlide(4)" alt="Friends Out for a Drink">
+            </div>
+
+            <div class="column">
+                <img class="demoCursor" src="images/html/NEBHammer.jpg" onclick="currentSlide(5)" alt="Group of Athletes">
+            </div>
+
+            <div class="column">
+                <img class="demoCursor" src="images/html/Daysoffuturepast.jpg" onclick="currentSlide(6)" alt="Nebraska Collegiate Graduation">
+            </div> 
+        </div>
+    </div>
+    <!--script for slideshow gallery function of college years-->
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("theSlides");
+        var dots = document.getElementsByClassName("demoCursor");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+
+    <p>
+        College was filled with some very distinct ups and downs. During the first two years of College at the Valparaiso University, Bryan was expecting to be getting scholarship money from being a Hammer Thrower that would never come as promised. During this time he made some very risky decisions that almost cost him his future. Hanging around the wrong crowds, engaging with the wrong people and just a sincere desire to prove some sort of point and fill some sort of void that would only be fulfilled by pursuing his purpose and success made him almost lose himself. Fortunately for him he had good friends like his best friend since eight years of age and a young woman whom refused to give up on him. <br><br>
+
+        After spending the two years making less than desirable decisions Bryan decided to head back home to Nebraska and rekindle his relationship with his girlfriend Janielle Bryan (yes Bryan was her last name). At her and his best friends behest Bryan contacted the throwing coach for the University of Nebraska and was able to secure a scholarship to hammer throw for one of the best track and field teams in the country. Life was definitely turning around for him and that’s when the real fun began. Bryan became a staple in the collegiate ranks and eventually became an all big twelve performer. And that was just his day job. He started organizing some of the most epic events a group of friends could experience. These events would affectionately become known as FD extravaganzas. Anyone who was lucky enough to become a part of the circle of friends got to have some of the best times of their lives over the next two years. He and his new wife were right at the center of connecting people and creating their own little community of friends that remain till this day. 
+    </p>
+
+    <br>
+    <hr>
+<!--family photo div and caption-->
+    <div id="famLife">
+        <div class="photo">
+            <figure>
+                <img id="Family" src="images/html/Jingle Bells.jpg" alt="Family Holiday Photo"><figcaption class="figpho">Jingle Bells and the Age Old Story</figcaption>
+            </figure>
+        </div>
+    </div>
+    
+    <p>   
+        Bryan and his now wife Janielle Bell would wed early in their adulthood before either of them turned 21 and would embark on a truly epic love story. In between going to school, track and field, and throwing some epic parties with their friends Bryan’s wife worked to support their family so he could spend time and energy on his pursuits. She was truly his ‘Rock of Ages’. Once he finished school it was his turn to support her as she, a former athlete herself for the University of South Dakota basketball team, decided to go back to school and commute from Omaha where they lived to Lincoln to complete her undergraduate degree. Bryan and Janielle were shaping up to be a real amazing team. They would soon welcome their first child Bryan III to add even more to the magic to their American Dream. Bryan started working for ConAgra and spend some years there before their next child would be born. They now had two sons Bryan III and Sean. <br><br>
+            
+        After Janielle graduated Bryan to a leap of faith and left a solid job that didn’t seem to be going anywhere to work for Walmart of all places. Some people wondered what he was thinking but ultimately it was the launching pad for the successful man we would see some years later. With Janielle working hard on her career as well and holding down the fort at home, Bryan ascended to Store Manager (and that’s when the big bucks started rolling in!). His hard work was paying off but his family life was beginning to suffer. True as most things, there is no success without struggle. There is no victory without sacrifice. 
+        <br><br>
+
+        Life would bring the Bell family one more joy that they had been hoping for a long time. A baby girl was born! Jacii Bell was born to complete the family and the patriarch of this American dream would have to make some major decisions. Bryan decided that with his wife’s career taking off, it was time for him to correct this imbalance of work without family. Having a beautiful home to come home to is not enough when you don’t get to enjoy it with your family. Even if you get to pull up in a cool Dodge Charger while you do it. Bryan had quickly amassed some nice toys and even attracted the attention of Mopar Sports with his Blue Dodge Charger Hell Cat, something that working for Walmart had afforded him, but it was all for not if he couldn’t spend time with his family. He was determined to be a better example for his kids of doing it the right way. He decided to leave a lucrative career as a store manager to become a Real Estate Agent. This way he could live the American Dream without sacrificing his family. Love never felt this good!
+                
+    </p>
+
+    <hr>
+
+    <h2>Step Right up, You're the Next Contestant on the Price is Right</h2>
+<!--work photo div-->
+    <div id="wFloatL">
+        <img src="images/html/Milford Pic.jpg" alt="Professional Photo">
+    </div>
+
+    <p>
+        Bryan joined Milford Real Estate Group with the intention of making an immediate impact. A venture chosen from the idea of the Lead Broker of the agency, Bryan got his license through self-study while working at his old job and jumped right in and started making waves. Bryan is a true community leader and desires to make the buying process the best if possibly can be for his clients. He aims to be the person you can talk to about anything and yet knowledgeable about all the things that will make his clients buying process the absolute best. In his own words he would describe himself this way:
+
+        <!--quote from Milford website-->
+        <blockquote cite="https://www.milford.com/our-agents/bryan-bell">
+        "If anybody asks, I’m just a big nerd… who would be willing to arm wrestle someone to win you your dream home! Hi, I’m Bryan and I am a Realtor® with Milford.<br><br>
+
+        I am 100% dedicated to helping you accomplish your goal of owning a home. My competitive streak serves me well when it comes to protecting your interests.<br><br>
+
+        I don’t believe that the price of your home determines how hard I will work for you; once we begin our relationship together, I will be completely committed to you! I love building relationships with my clients, and fostering those relationships beyond the sale itself brings me purpose. I promise to always be kind, respectful, and supportive in our dealings together.<br><br>
+
+        Let’s be honest, I’m over the top like Stallone, and will probably bring the turtleneck like the Rock. You can’t go wrong working with me!"<br><br>
+        </blockquote>
+
+    </p>
+
+    <p>
+
+        If the next ten years of Bryan’s career is anything like what he has done so far, It is sure to be one heck of a ride to the top. Maybe you will be his next client. Success is just one step at a time and even if you stumble, just get back up and try it again or try something new, just like Bryan has. This is how his sports career has gone, his life has gone, and now he is a community leader showing people how it’s done on a daily basis. This is the way.
+        
+
+    </p>
+
+    <p class="Return"><a href="#topReturn">Return to top</a></p>
+    <br>
+    <br>
+    
+
+</div>
+
+
+
+<div id="sideBarR">
+    <ul></ul>
+    <p>&#169; Copyright of Tierre Green and Evergreen Tech, LLC</p>
+</div>
+
+</body>
+
 </html>
